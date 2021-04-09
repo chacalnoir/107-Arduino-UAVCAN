@@ -108,6 +108,9 @@
 /* /reg/drone/service/sensor **********************************************************/
 #include "wrappers/reg/drone/service/sensor/Status_0_1.hpp"
 
+/* /reg/drone/service/common **********************************************************/
+#include "wrappers/reg/drone/service/common/Heartbeat_0_1.hpp"
+
 /* uavcan/diagnostic ******************************************************************/
 #include "wrappers/uavcan/diagnostic/Record_1_0.hpp"
 #include "wrappers/uavcan/diagnostic/Record_1_1.hpp"
