@@ -110,6 +110,7 @@
 
 /* /reg/drone/service/common **********************************************************/
 #include "wrappers/reg/drone/service/common/Heartbeat_0_1.hpp"
+#include "wrappers/reg/drone/service/common/Readiness_0_1.hpp"
 
 /* uavcan/diagnostic ******************************************************************/
 #include "wrappers/uavcan/diagnostic/Record_1_0.hpp"
