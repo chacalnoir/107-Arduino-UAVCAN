@@ -463,7 +463,7 @@ static inline float nunavutFloat16Unpack(const uint16_t value)
     typedef union  // NOSONAR
     {
         uint32_t bits;
-        float real;
+        double real;
     } Float32Bits;
 
     // The no-lint statements suppress the warning about the use of union. This is required for low-level bit access.
@@ -479,7 +479,7 @@ static inline float nunavutFloat16Unpack(const uint16_t value)
         out.bits |= ((uint32_t) 0xFFU) << 23U;
     }
     out.bits |= ((uint32_t)(value & 0x8000U)) << 16U;
-    return out.real;
+    return (float)out.real;
 }
 
 static inline int8_t nunavutSetF16(
